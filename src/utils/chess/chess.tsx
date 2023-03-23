@@ -416,8 +416,6 @@ const useChess = ({ onClear, onMove, shouldMove, defaultTurn = true, defaultSort
                     row: number,
                     color: string,
                 ) => {
-                    console.log(isKingMoved, isRook1gMoved, isRook2gMoved, row, color);
-
                     if (!isKingMoved) {
                         if (
                             !isRook1gMoved &&
