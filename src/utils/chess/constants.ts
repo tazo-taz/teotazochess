@@ -1,0 +1,5 @@
+export const horizontalBoard = "abcdefgh"
+export const verticalBoard = "87654321"
+export const SIMPLE_MOVE = "SIMPLE_MOVE"
+export const SMALL_CASTLE = "SMALL_CASTLE"
+export const BIG_CASTLE = "BIG_CASTLE"

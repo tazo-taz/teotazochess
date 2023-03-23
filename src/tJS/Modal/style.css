@@ -1,0 +1,10 @@
+.OpacityModalBoxClass,
+.OpacityModalBoxClass {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.OpacityModalBoxClass.active,
+.OpacityModalBoxClass.active {
+    opacity: 1;
+}

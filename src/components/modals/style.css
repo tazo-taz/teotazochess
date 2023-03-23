@@ -1,0 +1,21 @@
+.mymodalboxclass {
+    border-radius: 5px !important;
+    border: none !important;
+    background: linear-gradient(0deg, #617b3d, #69893c) !important;
+}
+
+.toUpgradePieces {
+    width: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.toUpgradePieces:hover {
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+.gameOverPiece {
+    height: 60px;
+}

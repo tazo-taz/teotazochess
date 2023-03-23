@@ -1,36 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --gray-dark: #3E3D39;
+  --gray-dark1: #41403D;
+  --gray-dark2: #2F2E2C;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App {
+#root {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #000000, #4a4a49);
   display: flex;
-  flex-direction: column;
-}
-
-.App>div {
-  display: grid;
-  grid-template-columns: repeat(8, 100px);
-  grid-template-rows: repeat(1, 100px);
-}
-
-.App>div>div {
-  display: grid;
-  place-items: center;
-  border: 3px solid transparent;
-  overflow: hidden;
-}
-
-.App>div>div.active.whitebox {
-  background-color: #F7F769;
-  border: 3px solid #F7F769;
-}
-
-.App>div>div.active.darkbox {
-  background-color: #BBCB2B;
-  border: 3px solid #BBCB2B;
+  justify-content: center;
+  align-items: center;
 }
 
 .canMoveIn {
@@ -63,26 +51,92 @@
   height: 100%;
   box-shadow: inset 0 0 0px 10px #00000029;
   border-radius: 50%;
+  z-index: 4;
 }
 
 .piece {
-  width: 86%;
-  height: 86%;
+  width: 94%;
+  aspect-ratio: 1;
   overflow: hidden;
   z-index: 2;
+  object-fit: cover;
 }
 
-
-.App>div>div.checked {
-  background-color: #f33f3f !important;
-}
-
-.whitebox {
+.classicwhitebox,
+.classicBluewhitebox,
+.classicRedwhitebox {
   background-color: #EEEED5;
 }
 
-.darkbox {
+.classicBluedarkbox {
+  background-color: rgb(93, 131, 148);
+}
+
+.classicReddarkbox {
+  background-color: rgb(148, 93, 93);
+}
+
+.classicdarkbox {
   background-color: #7D945D;
+}
+
+.nacqociwhitebox {
+  background-color: rgb(170, 63, 63);
+}
+
+.nacqocidarkbox {
+  background-color: rgb(63, 93, 170);
+}
+
+.darkgreen {
+  background: #2d4b05 !important;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.aspect-ratio {
+  aspect-ratio: 1;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.not-allowed {
+  cursor: not-allowed !important;
+}
+
+.spin {
+  animation: spinAnim 1s infinite;
+}
+
+.test {
+  width: 130px;
+  aspect-ratio: 1;
+  background-color: red;
+}
+
+@keyframes spinAnim {
+  from {
+    rotate: 0;
+  }
+
+  from {
+    rotate: 360deg;
+  }
 }
 
 @keyframes anim {
